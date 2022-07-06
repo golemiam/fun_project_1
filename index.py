@@ -1,3 +1,10 @@
+# This is a sample Python script.
+
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+
 import random
 
 def main():
@@ -199,8 +206,10 @@ def main():
     for i in range(20):
         char()
     print(random_list)
-    print(random.random() * 10)
-
+    rand_string = ''.join(random_list)
+    print(rand_string)
 
 if __name__ == '__main__':
     main()
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
