@@ -75,140 +75,82 @@ too<!DOCTYPE html>
 
 
 
-<div class="card">
-    <div class="card-header" id="headingFive">
+<!-- Main Accordion -->
+<div class="accordion" id="mainAgenda">
+
+  <!-- Parent: Ministering -->
+  <div class="card">
+    <div class="card-header" id="headingMinistering">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseMinistering">
+          Ministering (Click to expand)
         </button>
       </h2>
     </div>
-    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-      <div class="card-body">
-        <div class = "text-info">
-  <h5> </h5>
 
-
-  </div>
-</div>
-    </div>
-    </div>
-<div class="card">
-    <div class="card-header" id="headingSix">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          test3
-        </button>
-      </h2>
-    </div>
-    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+    <div id="collapseMinistering" class="collapse" aria-labelledby="headingMinistering" data-parent="#mainAgenda">
       <div class="card-body">
-        <div class = "text-info">
-  <h5>test2</h5>
-            <ul>
-  <li>test</li>
-</ul>
+        
+        <!-- NESTED ACCORDION START -->
+        <div class="accordion" id="nestedMinistering">
+
+          <!-- Sub-item 1: Assignments -->
+          <div class="card">
+            <div class="card-header" id="subHeadingAssignments">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#subCollapseAssignments">
+                  Ministering Assignments & Organization
+                </button>
+              </h2>
+            </div>
+            <div id="subCollapseAssignments" class="collapse" data-parent="#nestedMinistering">
+              <div class="card-body text-info">
+                <ul>
+                  <li>Changes to current list</li>
+                  <li>New assignments</li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-    </div>
-    
 
-
-
-
-
-            
-
-
-
-
-    
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Ministering
-        </button>
-      </h2>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-    <div class="text-info">
-
-    </div>
-</div>
-    </div>
-
-
-        <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-         Ministering AssignmentsOrganization
-            
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        <div class = "text-info">
-            <ul>
-                <li>Changes to current list</li>
-                <li>New assignments</li>
-            </ul>
-        </div>
-  </div>
-    </div>
-        </div>
-    </div>
-
+          <!-- Sub-item 2: Service Needs -->
           <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-       
-        Service needs
-             </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        <div class = "text-info">
-        <ul>
-          <li>Service Coordinator calling?</li>
-          <li>Moves?</li>
-       </ul>
-
-        </div>
-  </div>
-    </div>
+            <div class="card-header" id="subHeadingService">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#subCollapseService">
+                  Service Needs
+                </button>
+              </h2>
+            </div>
+            <div id="subCollapseService" class="collapse" data-parent="#nestedMinistering">
+              <div class="card-body text-info">
+                <ul>
+                  <li>Service Coordinator calling?</li>
+                  <li>Moves?</li>
+                </ul>
+              </div>
+            </div>
           </div>
-      </div>
-      </div>
-        
- <div class="card">
-    <div class="card-header" id="headingFour">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-       
-Ministering Interviews
-            </button>
-      </h2>
-    </div>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body">
-        <div class = "text-info">
-<ul>
-<li>Date?</li>
-</ul>
 
-        </div>
-  </div>
-    </div>
- </div>
+          <!-- Sub-item 3: Interviews -->
+          <div class="card">
+            <div class="card-header" id="subHeadingInterviews">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#subCollapseInterviews">
+                  Ministering Interviews
+                </button>
+              </h2>
+            </div>
+            <div id="subCollapseInterviews" class="collapse" data-parent="#nestedMinistering">
+              <div class="card-body text-info">
+                <ul>
+                  <li>Date?</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+       
 <br>
   <h5>Welfare</h5>
 <ul>
@@ -247,10 +189,15 @@ Ministering Interviews
     <li>Elders in Nursury</li>
     <li>Homebound</li>
 </ul>
-<br>
-        </div>
+</div> <!-- END NESTED ACCORDION -->
+
       </div>
     </div>
+  </div>
+  
+  <!-- Next Main Section (Activities, etc) would go here -->
+
+
 
   <div class="card">
     <div class="card-header" id="headingTwo">
