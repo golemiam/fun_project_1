@@ -209,14 +209,34 @@ too<!DOCTYPE html>
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#headingMinistering">
       <div class="card-body">
-          <div class = "text-info">
-    <h5>Activities Committee</h5>
+<!-- NESTED ACCORDION START -->
+        <div class="accordion" id="nestedActivities">
+
+            <!-- Sub Item 1 -->
+        <div class="card">
+          <div class="card-header" id="subHeadingActivitiesCommittee">
+          <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#subCollapseActivitiesCommittee">
+
+          <!-- <div class = "text-info"> -->
+    Activities Committee
+                  </button>
+              </h2>
+            </div>
+
+            <div id="subCollapseActivitiesCommittee" class="collapse" data-parent="#nestedActivities">
+                <div class="card-body text-info">
+
   <ul>
     <li>Names</li>
       <li>Resources</li>
 
     
   </ul>
+               </div>
+            </div>
+          </div>
+     <!-- Camp -->
   <h5>Camp</h5>
   <ul>
     <li>Schedule Campground</li>
