@@ -80,15 +80,15 @@ too<!DOCTYPE html>
 
       <!-- Parent: Today's Agenda -->
   <div class="card">
-    <div class="card-header" id="headingZero">
+    <div class="card-header" id="headingTodaysAgenda">
       <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseZero">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTodaysAgenda">
           Today's Agenda
         </button>
       </h2>
     </div>
 
-<div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#mainAgenda">
+<div id="collapseTodaysAgenda" class="collapse" aria-labelledby="headingTodaysAgenda" data-parent="#mainAgenda">
       <div class="card-body">
         
         <!-- NESTED ACCORDION START -->
@@ -187,8 +187,9 @@ too<!DOCTYPE html>
               </div>
             </div>
           </div>
+        </div>
 
-      
+<div class="accordion" id="mainMinistering">
   <!-- Parent: Ministering -->
   <div class="card">
     <div class="card-header" id="headingMinistering">
@@ -199,7 +200,7 @@ too<!DOCTYPE html>
       </h2>
     </div>
 
-    <div id="collapseMinistering" class="collapse" aria-labelledby="headingMinistering" data-parent="#mainAgenda">
+    <div id="collapseMinistering" class="collapse" aria-labelledby="headingMinistering" data-parent="#mainMinistering">
       <div class="card-body">
         
         <!-- NESTED ACCORDION START -->
